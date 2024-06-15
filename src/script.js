@@ -48,7 +48,7 @@ fontLoader.load("./fonts/helvetiker_regular.typeface.json", (font) => {
   const DonutGeometry = new THREE.TorusGeometry(0.3, 0.2, 20, 45);
   const DonutMaterial = new THREE.MeshNormalMaterial();
 
-  for (let i = 0; i < 500; i++) {
+  for (let i = 0; i < 200; i++) {
     const DonutMesh = new THREE.Mesh(DonutGeometry, DonutMaterial);
 
     scene.add(DonutMesh);
@@ -99,7 +99,7 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.x = 1;
 camera.position.y = 1;
-camera.position.z = 2;
+camera.position.z = 10;
 scene.add(camera);
 
 // Controls
